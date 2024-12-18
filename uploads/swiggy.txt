@@ -1,0 +1,848 @@
+Swiggy Business Model & Growth Strategy
+Amidst the bustling streets of Bangalore, Sriharsha Majety and Nandan Reddy founded Swiggy, setting out to revolutionise India's food delivery landscape, starting with just 6 delivery executives and 25 restaurants. Fast forward to now, Swiggy is valued at $15.1 billion. Dive in for some amazing insights on Swiggy’s innovative business model.
+
+Business Models
+•
+Aug 9, 2024
+Mallika Suri
+Mallika Suri
+Table of Contents
+
+The Origin of Swiggy ????
+Swiggy’s Competitive Advantage (MOAT) ????
+Market Overview
+Food Service Market in India ????
+Online Food Delivery Market ????
+Quick Commerce Market ????️
+Competitive Landscape ????
+Food Delivery ????
+Quick Commerce ????
+How does Swiggy make money? ????
+Growth Model
+ICP
+Acquisition
+Onboarding
+Engagement & Retention
+Monetisation
+Swiggy’s Expense Breakdown ????
+Metrics to be tracked ????
+Market Opportunity ✅
+Challenges ????
+
+Twitter
+Facebook
+LinkedIn
+Swiggy Business Model & Growth Strategy
+Picture this: You're lounging on your couch in your favourite pajamas, binge-watching the latest hit series, when suddenly, your stomach growls louder than a Game of Thrones dragon and you realise there's nothing but a sad, lonely tomato in your fridge. ????
+Enter Swiggy - the food delivery aggregator who is here to save the day. Whether you are craving gourmet sushi or just want a burger that doesn't taste like cardboard, Swiggy’s got you covered.
+
+Ever wondered how this food delivery marvel makes it all happen? Buckle up as we dive into Swiggy's innovative business model - the perfect blend of technology, logistics, and a dash of genius. ????
+????
+If you are interested to uncover business models of D2C brands you can check out Starbucks Business Model, ixigo Business Model, & other blogs here.
+The Origin of Swiggy ????
+In the bustling streets of Bangalore in 2014, two ambitious minds, Sriharsha Majety and Nandan Reddy, embarked on a mission to revolutionise food delivery landscape in India with Swiggy. Despite the crowded market and initial skepticism, they aimed to disrupt the traditional restaurant-takeaway model by promising rapid, reliable deliveries.
+Their journey began with Bundl, an e-commerce logistics startup, which they had to shut down within a year due to tough competition from giants like Flipkart & eBay. Learning from this, they saw a new opportunity in hyperlocal food delivery. Partnering with Rahul Jaimini, a tech genius from Myntra, they founded Swiggy in August 2014. 
+Swiggy’s Founders
+Swiggy’s Founders
+
+Starting with 6 delivery executives and 25 restaurants in Bangalore's Koramangala, Swiggy set out with a bold promise: to deliver food within 40 minutes. 
+Swiggy's competitive edge laid in its promise for fast, reliable delivery. While rivals like Zomato and Foodpanda focused on restaurant listings, Swiggy invested in its fleet of delivery personnel, ensuring a seamless experience for both restaurants and customers. This strategy paid off as Swiggy rapidly expanded to 40 cities across 9 states. ????
+
+By 2015, they were partnering with over 100 restaurants and managing more than 70,000 orders monthly. Their big break came when they secured $2 million in funding from Accel and SAIF Partners, allowing them to expand.
+By 2018, Swiggy became one of India’s fastest startups to achieve 'unicorn' status. ????
+Today, Swiggy has grown to:
+Today, Swiggy has grown to:
+Operate in 600 cities ????️
+Having 2,72,000+ restaurant partners actively engaged each month. ????
+Having 4,00,000 active delivery partners. ????
+Having 24Mn+ MAU ????
+Hold a market share of ~45%. ????
+Generate ₹8,265 crore in revenue (FY23). ????
+Swiggy’s valuation has surged to $15.1 billion, up from $12.1 billion in December 2023. The company is now gearing up for an IPO, aiming to raise $1.25 billion (which includes $450 million in new shares and $800 million from existing investors) marking a bold step into the public market.
+From delivering just 35 orders in its first month to handling over a billion orders, Swiggy’s journey is a testament to innovation, resilience, and the power of an unwavering vision.
+Swiggy’s Competitive Advantage (MOAT) ????
+1. The Magic of Integration ✨
+Swiggy is clever; it decided to pack food delivery and grocery shopping into one app, making life easier for its users. Think of it like this: You’re on Swiggy ordering some pizza, and while you’re waiting, you remember you need some bread for breakfast. No problem! Just slide over to the grocery section within the same app and boom—bread is on its way.
+Zomato, on the other hand is fragmented in its approach - It wants you to download a whole different app if you want to order groceries. It’s like being told you have to switch TV channels to watch the rest of the movie. It’s a hassle, and honestly, who’s got the time?
+Plus, Swiggy just needs to tap you on the shoulder while you’re ordering your biryani to suggest, "Hey, maybe get some milk too?". Zomato, on the other hand, has to first convince you to even get Blinkit on your phone. Who wants that extra chore?
+2. The Shared Fleet Superpower ????
+Now, let's talk about Swiggy’s delivery fleet. They’ve got it all figured out—they pick up your burger, then stop by the grocery store to grab your veggies, all in one trip. It’s like having Batman deliver your dinner and groceries at the same time—pretty cool, right?
+This not only makes Swiggy faster and more efficient, but it also helps them save money. Why? Because they don’t need separate fleets for food and groceries—same drivers, same bikes, fewer costs. Plus, Swiggy gets to brag about how their super-efficient, AI-powered fleet allocation system is saving the world one delivery at a time. It’s the kind of tech-y jargon that gets investors excited.
+3. First Mover Advantage ????
+Before you roll your eyes thinking, “Wait, how can you call it a "first-mover advantage" when Zomato started in 2008 and Swiggy in 2014?” - hear me out.
+Imagine you’re racing in a marathon. The first runner to hit the track has a clear advantage—they’ve got a head start. This is what we call “first-mover advantage”—the benefits a company gets from being the first to enter a market.
+
+Now, think of Swiggy and Zomato in the food delivery race. Zomato started in 2008, long before Swiggy, and was already well-known for its restaurant listings. But when Swiggy launched in 2014, it wasn’t really about being first—it was about being smarter and more efficient in a crowded market.
+
+While Zomato and other early players like Foodpanda were mostly connecting customers to restaurants and leaving the delivery to either restaurants or third-party logistics providers, Swiggy decided to manage the entire delivery process themselves by building a super-efficient delivery network with its own riders, tracking every order closely, and ensuring it reached you quickly, no matter the weather.
+This hands-on approach made a huge difference.
+????
+GrowthX is an invite-only club for ambitious founder & growth leaders.
+Our members are top founders, product & marketing leaders from 2,400+ internet companies like Google, Canva, CRED & Netflix. 
+The GrowthX Membership is built on 3 core pillars:
+First, learning experience
+Learn the science of revenue-led growth with frameworks actionable the next Monday morning.
+Second, curated community
+access to a safe space for you to soundboard anything that is stressing you at work.
+Third, professional outcomes
+Over 35% of members are founders & are able to hire growth teams to scale revenue for their companies while operators are able to get into breakout leadership roles.
+Become a member! 
+Market Overview
+Food Service Market in India ????
+Imagine India’s food services market as a gigantic, ever-expanding thali (that’s a platter full of food, for those not in the know). Right now, it’s worth  ₹5.5 lakh crore, but by 2030, it’s expected to grow to a whopping ₹9 lakh–₹10 lakh crore. That’s like adding more and more delicious dishes to the thali every year! 
+
+And the most exciting part? A massive slice of this feast—more than one-fifth of it—will be served straight to your doorstep through online food delivery.
+Food Service Market in India
+Food Service Market in India
+But How Did We Get Here? ????
+Let’s rewind a bit. Remember the days when ordering food was something you did on special occasions? Fast forward to today, and it’s no longer just about celebrations.
+Currently this number is at five times a month and is expected to increase to 7–8 times a month by 2030. It’s becoming more about convenience, just like in places like the US and China, where people eat out 25–30 times a month. That’s a massive shift!
+And this shift is happening fast. The food services market, which includes both dining out and ordering in, is growing at a compound annual growth rate (CAGR) of 10-12%. 
+
+By 2030, online food delivery alone is expected to swell up to ₹2.12 lakh crores, making up a hefty chunk of the overall food services pie.
+Who's Eating All This Food? ????
+Now, let’s talk about the people at the table. By 2030, the addressable customer base—meaning the number of people likely to order in or dine out—is expected to reach a whopping 45 crore. That’s nearly the population of the entire United States! What’s driving this growth? 
+Cause
+Aspect
+Metric
+Urbanisation
+Consumption in top 50 cities
+70%
+Increase in disposable incomes
+Consumption by upper-middle and high-income segments
+70%
+Increase in Gen Z & Millineal population
+Consumption by Gen Z and younger population
+40%
+Digitilization
+MAU for top delivery platforms in 2023.
+50 Million+
+Online Food Delivery Market ????
+Now, let’s zoom in on one part of this thali that’s growing faster than the rest—online food delivery. Think of it as the hot favourite dish that everyone keeps going back for. 
+
+This segment is expected to grow at an impressive 18% CAGR, much faster than the overall market.
+????
+There’s a 40%+ YoY growth in cloud kitchens over the periods of 2019-2023.
+As people look for fast, convenient meals, these formats are becoming the go-to choice.
+Right now, about 12% of the market is online, but by 2030, that number will rise to 20%.
+
+The online food delivery scene in India has exploded, growing 2.8 times faster than the overall food services market between 2019 and 2023, thanks in part to the pandemic. 
+Food Consumption in India
+Food Consumption in India
+Quick Commerce Market ????️
+Think of a young entrepreneur in Bangalore, juggling a startup and a social life, with no time to shop for groceries. Or a busy mom in Mumbai who realises she’s out of dinner ingredients after a long day at work. In these moments, Q-Commerce swoops in like a superhero, delivering what they need almost instantly. It’s the new normal, making life easier for millions in bustling cities.
+Quick Commerce GMV 
+Quick Commerce GMV 
+Q-Commerce in India isn’t just growing—it’s exploding. Last year, the market grew at an astonishing 70-75%, outpacing traditional e-commerce by 5X.
+
+And this rapid growth is set to continue, with the market projected to expand by 75-85% in FY25, reaching a Gross Merchandise Value (GMV) of around $6 billion.
+????
+What’s Driving the Growth?
+More Users, More Often: The number of Monthly Transacting Users (MTUs) surged by over 40% in FY24, with people now ordering nearly 6X a month, up from 4.4X in FY21. 
+Bigger Orders: As people get more comfortable with Q-Commerce, they’re spending more, with Average Order Values increasing by over 15% in FY24. Event-driven shopping and a wider range of products are driving this trend.
+Metro Dominance: About 90% of Q-Commerce activity is concentrated in major metro cities, where the demand for quick delivery is highest.
+The Future of Q-Commerce
+The growth spree isn’t slowing down anytime soon. By FY26, Q-Commerce is expected to reach 20 million MTUs, with 5 million new users joining next year alone. 
+Existing users are also predicted to spend 20% more, as they embrace new products and services offered by Q-Commerce platforms.
+To meet this demand, companies are planning to open 500 new dark stores (local fulfillment centres) in the top 30-50 cities, enhancing delivery speed and efficiency. 
+However, expansion into smaller cities will take more time and may require new strategies, possibly leveraging local Kirana stores for fulfillment.
+Competitive Landscape ????
+Food Delivery ????
+The online food delivery market has been dominated by the big two—Swiggy and Zomato—for a very long time. However, there are still a number of well-performing minor players to consider. Swiggy currently has 14–16 million monthly transacting users, compared to Zomato's 18.6 million.
+To make the comparison easier, here’s a breakdown of how the food delivery players in India stack up across the Accessibility, Affordability, Assortment and Quality parameters using the AAAQ framework.
+1. Accessibility: Speed of Delivery
+Delivery time. The lower the time of delivery, the higher the accessibility.
+Platform
+Average Delivery Time
+Rider Fleet
+Number of Cities Covered
+???? Swiggy
+40-45 minutes
+350K+
+580+
+???? Zomato
+40-45 minutes
+470K+
+1000+
+???? Domino’s
+< 30 minutes
+12K+
+275+
+???? McDonald’s
+35-45 minutes
+3K+
+40+
+???? Eat.Sure
+N/A
+N/A
+50+
+???? KFC
+45-60 minutes
+3.5K+
+130+
+2. Affordability: Cost of Delivery
+The cost of the food. The lower the cost of food, the higher the affordability
+Platform
+Average Ticket Size
+Surge Pricing / Delivery Fee
+Heavy Discount
+???? Swiggy
+Rs. 350-400
+Yes
+Yes
+???? Zomato
+Rs. 350-400
+Yes
+Yes
+???? Domino’s
+Rs. 400-500
+No
+No
+???? McDonald’s
+Rs. 350-450
+No
+No
+???? Eat.Sure
+N/A
+N/A
+Yes
+???? KFC
+Rs. 500-600
+No
+No
+3. Assortment: Variety of Options
+The number of restaurants/food choices offered. The more the number of restaurants, the higher the assortment.
+Platform
+Number of Restaurants/Outlets
+???? Swiggy
+250K+
+???? Zomato
+300K+
+???? Domino’s
+1500
+???? McDonald’s
+300
+???? Eat.Sure
+300+
+???? KFC
+675+
+4. Quality
+The number of restaurants providing food with high-quality ingredients. The more the number of such restaurants, the higher the quality offered.
+Platform
+Focus/Control on Ingredients 
+???? Swiggy
+⭐⭐⭐
+???? Zomato
+⭐⭐⭐
+???? Domino’s
+⭐⭐⭐⭐⭐
+???? McDonald’s
+⭐⭐⭐⭐⭐
+???? Eat.Sure
+⭐⭐⭐⭐
+???? KFC
+⭐⭐⭐⭐⭐
+Market Share
+Market Share in terms of Active Users
+Market Share in terms of Active Users
+????
+GrowthX is an invite-only club for ambitious founder & growth leaders.
+Our members are top founders, product & marketing leaders from 2,400+ internet companies like Google, Canva, CRED & Netflix. 
+The GrowthX Membership is built on 3 core pillars:
+First, learning experience
+Learn the science of revenue-led growth with frameworks actionable the next Monday morning.
+Second, curated community
+access to a safe space for you to soundboard anything that is stressing you at work.
+Third, professional outcomes
+Over 35% of members are founders & are able to hire growth teams to scale revenue for their companies while operators are able to get into breakout leadership roles.
+Become a member! 
+Quick Commerce ????
+Metric
+Swiggy Instamart
+Blinkit
+Zepto
+Founded on
+2020
+2021
+2021
+Market Share
+37%
+39%
+20%
+Market Share (Only in Metros)
+N/A
+37%
+32%
+Revenue FY 2023
+3,221 crore
+724.2 crore
+2,077 crore
+Monthly Active Users
+NA
+20 M
+13 M
+App Downloads
+100M+
+50M+
+10M+
+Revenue 
+₹3221.4 crores
+ ₹724 crores
+₹2024 crores
+No. of Dark Stores
+500
+450
+340
+AOV (INR)
+450+
+635
+450+
+Market Share
+Quick Commerce Market Share in India
+Quick Commerce Market Share in India
+How does Swiggy make money? ????
+IPO bound Swiggy, made ~₹8265 crores in operating revenue in FY23, which is a whopping 40% increase from what they made last year.
+
+So let’s breakdown the revenue model of Swiggy.
+1. Food Delivery
+Swiggy’s food delivery business remains the cornerstone of its revenue model - with contributing 81% to the over all revenue. But it's not just about delivering food—Swiggy has woven a network of revenue streams within this segment.
+Platform Fees: Swiggy introduced a platform fee that has seen a 20% increase this year - currently standing a ₹6 per order. With the food delivery industry processing over 1.5 million orders daily, Swiggy's share is substantial, making this fee a crucial revenue contributor.
+Restaurant Fees: Partner restaurants pay a commission, typically ranging between 20-30%, to be listed on Swiggy. 
+This fee structure, while essential for Swiggy’s revenue, has been a point of contention among restaurant partners, especially with the additional pressure from Swiggy’s advertising revenue ambitions.
+Growth in Orders and Value: Swiggy’s food delivery business has experienced double-digit growth, fueled by a higher average order value and an ever-expanding user base. This growth is pivotal as Swiggy eyes an IPO, with projected revenues approaching INR 10,000 Cr in FY24.
+2. Instamart
+Swiggy’s quick commerce arm, Instamart, has quickly become a powerhouse, complementing its food delivery business by contributing 17% to the revenue.
+Order Volume: Instamart has seen a surge from 4,00,000 daily orders in March 2023 to nearly 5,00,000 orders per day, showcasing the increasing consumer preference for quick commerce.
+Revenue and Growth Metrics: In FY23, Swiggy generated ₹3,221.4 Cr from Instamart, a 39.7% increase from the previous fiscal year. 
+The average order value has risen by 20% to around INR 460, reflecting the larger basket sizes and improved customer retention. 
+Swiggy’s Revenue Model
+Swiggy’s Revenue Model
+3. Others
+Dineout and Restaurant Services: In May 2022, Swiggy bought Dine-out from Times Internet in a $120 million all-stock deal.
+Swiggy’s acquisition of Dineout has expanded its footprint into the dining out segment, offering restaurant bookings and exclusive offers, further monetising its relationship with partner restaurants.
+Hyperlocal Courier Services (Genie): Swiggy Genie allows users to send packages across town, adding a new dimension to Swiggy’s service offerings and tapping into the gig economy.
+Advertising Revenue: A growing revenue stream for Swiggy is advertising. In 2023, Swiggy’s advertising business hit an annualized run rate of INR 1,000 crore, contributing to around 10% of its total revenue. 
+The metric used to gauge this success is the ratio of ad revenues to Gross Merchandise Value (GMV), which for Swiggy stands at 3-3.5%. This means that for every ₹100 of GMV, ₹3-₹3.5 comes from ads—a significant figure given the scale of Swiggy’s operations.
+One Membership & HDFC Credit Card: Swiggy boosts its revenue model through Swiggy One membership, offering exclusive discounts and benefits, and the Swiggy HDFC Bank credit card, driving customer loyalty and increasing transaction frequency.
+
+If you want to understand as to why the Swiggy HDFC partnership is such a great GTM, checkout this GrowthX Insider video ????
+Video preview
+Marketing and Intelligence Tools: In July, Swiggy has launched a comprehensive suite of marketing services designed to help restaurant partners boost their brand visibility across social media platforms like Facebook, Instagram, and WhatsApp.
+????️
+These services include influencer marketing, social media ads, and WhatsApp marketing, all tailored to drive traffic directly to the restaurant's menu pages on the Swiggy app. 
+Growth Model
+A member from GrowthX community worked on the growth model project for Swiggy. 
+You can also join the membership to solve growth challenges organically, connect with professionals in business, marketing, product, and more.
+Scale your revenue and expand market share with our structured approach.
+We’ll be using those insights to breakdown the Growth Model for Swiggy.
+With this, let’s deep dive into the insights our member has gathered from their stint!
+ICP
+Persona
+Demographics
+Goals
+Values
+Behaviour
+Needs
+Priya and Raj - The Newlywed Nest-Builders
+Mid to late 20s, Tier-1 city, Rs. 30-40LPA combined income, working professionals
+To be fully settled, raise a family with ease
+Price consciousness, convenience
+Spends a lot of time at home, cooks themselves, orders food occasionally
+Convenient and affordable food delivery options, recipes, and tips for optimizing food spend
+Arjun - The Upmarket Craver
+Working male, 30s, Tier-1 city, Rs. 30-50LPA
+Satiate cravings without breaking the bank
+Premium brands, affordability
+Orders in to satiate cravings, price conscious
+Affordable premium food delivery options
+Harshit - The Order-In Addict
+Early to mid 20s, new city, male, 8-15LPA
+Figuring out life
+Premium brands, convenience
+Orders in daily, price conscious on a per order level, spends on premium brands
+Affordable food delivery options, help with budgeting and saving money, advice on career and life goals
+Rohit - The Carefree Bachelor
+Mid to late 20s, migrant to city, male or female, 18-25LPA, white-collared professional working in middle/senior leadership positions
+Career progression, upskilling, experiences, financial freedom, work-life balance
+Convenience, taste, quality, variety
+Orders because they enjoy eating quality food, also uses other food arrangements like cooks or meal plans
+On-demand food delivery with ample choice and ability to try something new
+Prioritisation of ICPs via Prioritisation Framework
+Basis the ICP Prioritisation framework, Persona 3 and Persona 4 from the above list have been prioritised. The reasoning for the same can be found in the table below. 
+Parameter
+The Order-In Addict ✅
+The Carefree Bachelor ✅
+Adoption Curve
+ㅤ
+ㅤ
+1. Need for Product
+High
+Medium-High
+2. Awareness of Product
+High
+High
+3. Willingness to Try?
+High
+High
+Overall
+High
+High
+Frequency of Usage
+High
+Medium-High
+Appetite to Pay
+High
+High
+TAM
+High
+Medium
+Distribution Potential
+High
+High
+ICP SUMMARY
+
+Market Sizing
+TAM (Top Down Approach)
+Target group aged between 15 - 45 years are more likely to order food or dine out at restaurants.
+Hypothesis
+Age Bracket
+Share
+Final Population
+Total population
+-
+140 Crore
+Below 15 yrs
+26%
+36 Crore
+Above 65 yrs
+7%
+10 Crore
+Between 15-35 yrs
+39% (65% of population is below 35 yrs)
+54 Crore
+Between 35 - 65 yrs
+27%
+38 Crore
+Between 35 -45 yrs
+Half of between 35 - 65 yrs (based on the assumption that majority of the Indian population is young)
+19 Crore
+Between 15-45 Yrs
+(Between 15 - 35 yrs + Between 35 - 45 yrs)
+73 Crore
+Average family size in India is approximately 4 & 2/4 will be potential buyers in the family.
+Life Time Value= $45 per user
+Addressable Population= 36 crores
+TAM = $16 billion
+SAM
+Population residing in Tier 1 and Tier 2 cities of India
+Hypothesis
+Serviceable Population = 18 crores
+SAM = $8 billion
+SOM
+Working population who have migrated to Tier 1 and Tier 2 cities for jobs
+Hypothesis
+Obtainable Population (40% of SAM) = 7.2 Crore
+SOM = 4.2 billion dollars
+TAM
+SAM
+SOM
+$16 Billion
+$8 Billion
+$4.2 Billion
+????
+GrowthX is an invite-only club for ambitious founder & growth leaders.
+Our members are top founders, product & marketing leaders from 2,400+ internet companies like Google, Canva, CRED & Netflix. 
+The GrowthX Membership is built on 3 core pillars:
+First, learning experience
+Learn the science of revenue-led growth with frameworks actionable the next Monday morning.
+Second, curated community
+access to a safe space for you to soundboard anything that is stressing you at work.
+Third, professional outcomes
+Over 35% of members are founders & are able to hire growth teams to scale revenue for their companies while operators are able to get into breakout leadership roles.
+Become a member! 
+Acquisition
+Product Stage - Mature
+Top two channels by volume & user quality
+1. Organic - Bring down the CAC
+Type of search
+Keyword
+Search volume (avg monthly) (in "000")
+Difficulty to rank on seo
+Avg cost per click
+Projected Click through rate
+Cost per website/app land
+Website land to conversion rate
+Final Conversions (in "000")
+Use case
+Food delivery
+561.1
+78
+$0.13
+70%
+$8
+40%
+157
+Competitor
+Zomato food delivery
+167.4
+66
+$0.5
+48%
+$2
+30%
+24
+Your product
+Swiggy food delivery
+40.3
+71
+$0.6
+34%
+$2
+40%
+5
+Your brand name
+Swiggy
+55.8
+78
+$0.42
+27%
+$3
+-
+-
+Inferences
+Plan of Action 
+Publish articles around "Swiggy Food Delivery" to enhance ranking
+notion image
+   Response from CX teams on escalations/comments on Quora
+notion image
+ 
+2. Product Integrations - Improve user quality through acquisition of premium quality (high LTV) customers. Identify complimentary products/services with premium quality user base - Food compliments well with entertainment and travel. Therefore, below mentioned are some of the platforms where the ICP can be engaged 
+(i)   OTT platforms like NETFLIX and PRIME:
+Redirection from the Netflix app/platform and Prime app/platform onto Swiggy to binge favorite cuisines while binge watching content
+Whatsapp/PN nudge to users with exclusive offers as they login the OTT platforms to watch content
+(ii)  Credit Card Rewards Platforms of Top tier/premium cards:
+Accelerated rewards on premium credit cards for users making any purchase on Swiggy. Eg: HDFC Infinia, Axis Magnus etc
+Exclusive Swiggy offers/gift cards to redeem the earned points
+(iii) Travel platforms like MMT:
+In app redirection to the Swiggy app for users travelling via bookings on MMT and GoIbibo as the people travelling will have the need to order food or eat at a restaurant
+Exclusive benefits like free delivery or special offers for the travelers upon redirection from MMT/Goibibo
+(iv) Event platforms like BookMyShow:
+For Movie goers, deliveries by Swiggy at the multiplexes like PVR, Cinepolis and Inox
+Users can book a meal via Swiggy while they make the booking by BookMyShow
+Exclusive DineOut offers in the FoodCourt at the mall by Swiggy n making booking via BookMyShow
+Channel name
+Time to go live
+Tech effort
+New users we can get (monthly)
+List Swiggy offers in Bank Credit card Reward Platforms
+Low
+Low
+0.2 Million
+Travel platforms like MMT, Goibibo
+Medium
+Medium
+0.02 Million
+Integration with OTT Platforms
+High
+High
+0.4 Million
+Integrations with events platform like Book My Show
+High
+High
+0.2 Million
+Incremental Acquisition projected from the 2 experiments ????
+Organic
+Product Integration
+0.18 million
+0.8 million
+Onboarding
+Job To Be Done Summary 
+ICP
+Financial
+Personal
+Functional
+Harshit - The Order-In Addict
+Keep my food costs in check
+ㅤ
+Ability to arrange food whenever I want without requiring any effort from my end
+Rohit - The Carefree Bachelor
+Rohit wants to be able to order food from restaurants that offer competitive prices and good value for money.
+Wants to eat delicious food
+Rohit wants to be able to order food quickly and easily, without having to spend a lot of time cooking or cleaning up.
+ 
+Activation Hypotheses:
+✅
+Hypothesis 1 - 3 fulfilled orders in the first week with positive validation via user feedback (>4+ stars)
+
+Reason: Fulfilment of 3 orders in the first week means that the customer found value in Swiggy's experience (goals achieved), and experienced an AHA moment which is leading to repeat usage of the platform.
+????
+Hypothesis 2 - Addition of credit card on platform with RBI tokenisation complete
+
+Reason: This can indicative of a commitment that the user is making to the platform because they find the process of entering a CVV every time tedious and want to make the process more efficient
+????
+Hypothesis 3 - Marking 3 restaurants as favorite in the first month of usage
+
+Reason: Marking 3 restaurants as 'Favorites" means that the user wants to reduce the friction associated with finding those restaurants on Swiggy and wants to simply be able to access them whenever they return thus indicating likely retention and continued usage
+????
+Hypothesis 4 - A user who refers a friend to Swiggy within their first 30 days of using the platform is likely to retain on the platform.
+
+Reason: Referring a friend is a social capital expenditure, and one would only do so if they have reason to like the platform.
+????
+Hypothesis 5 - Purchase of a Swiggy One membership within the first 45 days
+
+Reason: A purchase of a Swiggy One membership means that the user intends to amp up their purchases via Swiggy and a cost-benefit analysis that they have conducted reveals that they will save money through the membership
+ 
+Metrics to be Tracked ????
+Engagement & Retention
+Engagement & Retention in terms of Swiggy can be defined as the frequency of product use by user category
+
+Let’s start by defining the Active User: Someone who has placed at least 3 orders on Swiggy within a 15 day period. ⭐️
+It is hypothesised that achieving this milestone is indicative that the user sees value in Swiggy and hence has jobs which are being fulfilled via the usage of Swiggy while also serving as a proxy that the user is not using Swiggy in a transitionary phase.
+Natural Frequency of Swiggy Food Delivery & Sub-Products
+notion image
+Now that we’ve determined the frequency use case, let’s understand Engagement Framework Determination for Swiggy:
+Revenue Based Segmentation
+Advanced Segmentation
+ 
+And the next step after determining the Engagement Framework is to prioritise it ????
+Engagement Framework Prioritisation
+
+Based on the Engagement Framework that has been prioritised these are some of the product hooks
+ 
+1. Swiggy Streaks
+Goal: Convert loyal users into power users by rewarding consistent usage, increasing brand loyalty.
+Problem: Core users aren't fully engaged, risking churn and lower lifetime value.
+Alternatives: Existing loyalty programs and targeted promotions lack the excitement and achievement factor.
+Solution: A streak-based program that rewards regular use, encouraging deeper brand connection.
+Success Metrics: Enrolment, usage frequency, order value, churn rate, NPS.
+Ramp-Up Milestone: 25% of users redeem the 10th order reward.
+ 
+2. Swiggy MealMate
+Goal: Increase order frequency by offering personalised, cost-effective meal plans.
+Problem: Users face meal monotony and inconvenience in daily ordering.
+Alternatives: Manual meal planning, limited subscription services.
+Solution: Personalised meal plans from preferred restaurants, with easy management.
+Success Metrics: Order frequency, retention, satisfaction, conversion rates.
+Ramp-Up Milestone: Retain 60% of the test cohort over three months.
+ 
+Campaign Examples
+ 
+Understanding Retention & Resurrection of Churned Users
+Food delivery apps such as Zomato and Swiggy see retention rates of ~15% (blended against loyal and new) by the end of the 4th week post-download. Retention here means that the user places an order on the platform.
+The retention rate flattens out at roughy M+4 (4 months post order) at ~7% for Swiggy.
+Which Channels drive the best retention?
+Channel
+Retention Driver
+Swiggy Instamart ????️
+Instamart, offering quick and convenient grocery delivery, enhances retention by providing users with an all-in-one platform for their daily needs. Its integration with food delivery promotes habitual use, contributing to sustained engagement.
+Swiggy Genie ????
+Genie's hyperlocal parcel delivery service boosts retention by offering users a versatile solution for quick and hassle-free item transportation. Its reliability and convenience contribute to regular usage, reinforcing user loyalty.
+Swiggy Dineout ????️
+Dineout, facilitating restaurant reservations and payments, enhances user retention by providing a seamless dining experience. Users who regularly utilize this feature are likely to stay engaged, especially with exclusive offers and loyalty benefits
+Swiggy One Membership ????
+Swiggy One, a membership program offering free deliveries and exclusive perks, contributes to retention by providing added value and convenience. Members are incentivized to continue using the platform to maximize their benefits.
+Understanding Churn
+Churn refers to the number of customers who end their relationship with a company within a given period. In context of Swiggy, this could be in the form of:
+Voluntary Churn: Unsatisfactory Food Quality, Limited Restaurant options, High Delivery Charges, Better Discounts and Offers Elsewhere, Poor customer service, Change in Dietary Preferences, Dissatisfaction with App Interface etc.
+Involuntary Churn: Technical Glitches or App Crashes, Service Outages or Downtime, Delivery Delays or Unreliable Timing, Payment Failures or Transaction Issues, Quality Assurance Issues, App Unavailability on Preferred Platform, Regulatory Restrictions etc.
+
+These churns could lead to negative actions taken by the users in the form of: Reduced Order Frequency, Downgraded Swiggy One Membership, Decrease in the AOV, Ignored Exclusive Offers, Opting Out of Marketing Communications etc.
+In order to retain churning customers, Resurrection campaigns can be held.
+Resurrection Campaigns
+????
+GrowthX is an invite-only club for ambitious founder & growth leaders.
+Our members are top founders, product & marketing leaders from 2,400+ internet companies like Google, Canva, CRED & Netflix. 
+The GrowthX Membership is built on 3 core pillars:
+First, learning experience
+Learn the science of revenue-led growth with frameworks actionable the next Monday morning.
+Second, curated community
+access to a safe space for you to soundboard anything that is stressing you at work.
+Third, professional outcomes
+Over 35% of members are founders & are able to hire growth teams to scale revenue for their companies while operators are able to get into breakout leadership roles.
+Become a member! 
+Monetisation
+A monetisation strategy is a way for companies to generate revenue from its user base by providing additional value according to the usage, willingness to pay and profitability.
+
+In order understand these core points, let’s do a litmus test 
+Litmus Test 
+(i) Retention
+notion image
+????
+Retention for new users ~ 9% by Month 1
+There’s a 78% drop in retention for new users by the end of Month 1
+Retention for Loyal users (Core + Power) ~ 55% by Month 1
+Compared to new users retention seems stable at round 55% for loyal users
+Loyal users who have been using the app for over 2 months - 7/10 of them transact at least once a week
+(ii) Deeper Engagement
+Type
+Natural Frequency
+Breadth
+Percentage
+Casual
+1 x Week
+Uses 1 feature - uses Swiggy for food delivery
+42%
+Core
+2+ x Week
+Uses 2 feature/products
+38%
+Power
+5+ x Week
+Used more than 2+ features/products
+20%
+Around ~ 58% of the users falls into core + power users
+Both Core and Power users tends to have higher frequency and breadth
+(iii) Willingness to Pay
+Type
+How much would they pay for the product ?
+Would you pay for this just once ?
+Would you pay for it on a recurring basis ?
+What would make you pay more ?
+Casual
+50 - 100
+Yes
+No
+More discounts
+Core
+100 - 200
+No
+Yes
+Faster delivery, Special discounts , 1+1 offers
+Power
+100 - 250
+No
+Yes
+Faster agent assigning, Order prioritization, Faster delivery
+Litmus Test Passed ✅
+Substitute Pricing
+Now that it passed the litmus test, let’s understand the substitute pricing for Swiggy
+Swiggy Food Delivery
+Substitute way
+Flexibility to use
+Needs physical effort?
+Pricing
+Time
+Swiggy
+Very Easy
+Low
+Medium
+Medium
+Dunzo
+Easy
+Low
+Medium
+High
+Odering Food via ONDC
+Easy
+Low
+Low
+High
+Cooking at home
+Hard
+Medium
+Low
+High
+Hiring a cook
+Medium
+Medium
+Medium
+Medium
+Meal subscription
+Medium
+Low
+High
+Medium
+Going out to eat
+Medium
+High
+Low
+High
+Swiggy Instamart
+Substitute way
+Flexibility to use
+Needs physical effort?
+Pricing
+Time
+Instamart
+Easy
+Low
+Medium
+Low
+Delivery via ONDC
+Easy
+Low
+Medium
+Medium
+Delivery from local supermart
+Medium
+Medium
+Low
+Medium
+Buying directly from kirana store
+Medium
+High
+Medium
+High
+Quick commerce competitors
+Easy
+Low
+Medium
+Low
+Pricing Design
+1. Who to Charge? ????‍♀️
+RFM Grid
+Type
+Users
+Average Monetary Value
+Champions
+6,44,280 (15.61%)
+66.45
+Cannot lose them
+90,400 (2.19%)
+44.03
+Loyal Customers
+7,35,520 (17.82%)
+32.59
+At Risk
+6,80,960 (16.50%)
+9.01
+Need Attention
+1,87,960 (4.55%)
+5.71
+Potential Loyalists
+5,11,680 (12.40%)
+4.41
+About to sleep
+2,58,720 (6.27%)
+1.80
+Hibernating
+8,70,600 (21.09%)
+1.69
+Promising
+90,160 (2.18%)
+1
+New Customers
+56,880 (1.38%)
+1
+Swiggy is a transactional service
+Swiggy earns from both side of the network. As direct delivery charges from the users and as percentage commissions from the restaurant.
+For monetisation - The best segment to target for is the Champions and Loyal customers. Since these users tend to have high frequency and breadth, its advised that Swiggy go after Champions and Loyal users incase of monetisation. The Champions and Loyal users also tend to have higher trust on the brand than any other segments of user.
+ 
+2. When to charge? ⌚️
+notion image
+Perceived value of time and efficiency is greater than Perceived price, hence Swiggy can charge its users
+3. What to charge? ❓
+What can Swiggy charge for: Output. Swiggy can charge when the food is delivered (when the perceived value time is met )
+What is the core value proposition and the currency that helps user experience the core value prop?
+The core value proposition of Swiggy is the delivery, which saves time and money.
+What is the core action that user POV for which the user uses the product?
+The core action is when a user is browsing for a cuisine of his choice and it get delivered. Baiscally discovery and wide variety to choose from
+4. How much to charge?
+notion image
+System Design
+Since Swiggy is a low AOV, high frequency product, we will go for System 1. 
+The goal is reduce friction and ensure quick checkout.
+Checklist
+Does your product require a quick buying experience? - Yes
+Should the experience for first time buying and repeat buy look different? - Not necessarily
+notion image
