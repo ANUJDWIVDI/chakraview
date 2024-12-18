@@ -20,7 +20,7 @@
         .sidebar {
             width: 250px;
             height: 100vh;
-            background-color: #333;
+            background-color: white;
             position: fixed;
             left: 0;
             top: 0;
@@ -31,7 +31,7 @@
         }
     
         .sidebar h2 {
-            color: white;
+            color: black;
             font-size: 1.5rem;
             margin-bottom: 30px;
             font-weight: bold;
@@ -49,7 +49,7 @@
         }
     
         .sidebar li a {
-            color: white;
+            color: black;
             text-decoration: none;
             font-weight: 500;
             display: flex;
@@ -68,7 +68,7 @@
     
         /* Profile Section in Sidebar */
         .profile-section {
-            background-color: #444;
+            background-color: white;
             padding: 20px;
             border-radius: 10px;
             margin-top: 20px;
@@ -82,7 +82,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: black;
             margin-bottom: 10px;
         }
     
@@ -93,7 +93,7 @@
     
         /* Event Section */
         .container {
-            margin-left: 260px;
+            margin-left: 100px;
             padding-top: 30px;
             width: calc(100% - 260px);
         }
@@ -111,12 +111,12 @@
         .search-container button {
             padding: 10px;
             border-radius: 5px;
-            border: 1px solid #ddd;
+            border: 1px solid  black;
         }
     
         .search-container button {
             background-color: #ef771b;
-            color: white;
+            color: black;
             border: none;
         }
     
@@ -138,7 +138,7 @@
             width: 350px;
             height: 50px;
             background-color: #ef771b;
-            color: white;
+            color: black;
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -151,7 +151,7 @@
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            background-color: white;
+            background-color:black;
             color: #ef771b;
             display: flex;
             justify-content: center;
@@ -241,6 +241,67 @@
             margin-bottom: 15px;
             color: white;
         }
+/* General Container Styling */
+.container {
+    margin: 0 auto; /* Center align the containers */
+    padding: 20px;
+    width: 80%; /* Ensure consistent width */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional styling */
+    border-radius: 8px;
+    margin-bottom: 20px; /* Adds space below each container */
+    color: black;
+    display: block; /* Ensure containers behave like blocks */
+}
+
+/* Flex Container Override */
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center containers horizontally */
+    justify-content: flex-start; /* Align containers at the top */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for Search Section */
+.search-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.search-container input,
+.search-container select,
+.search-container button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.events-container {
+    margin-left: 300px;
+    padding: 20px;
+    width: 50%;
+}
+
+/* Styling for Events Section */
+.events-container ul {
+    list-style-type: none;
+    margin-left: 150px;
+    padding: 0;
+}
+
+.events-container li {
+    color: black;
+    margin-bottom: 10px;
+   
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
     </style>
     
 </head>
@@ -248,7 +309,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-        <h2>Chakraview</h2>
+        <h2><a href="{{url_for('dashboard')}}">  Chakraview </a> </h2>
 
         <div class="profile-section">
             <div class="profile-icon">NS</div>
@@ -265,18 +326,14 @@
             <li><a href="#"><span class="icon">&#x2709;</span> Contact</a></li>
         </ul>
 
-        <div class="subscribe-section">
-            <h3>Subscribe to Newsletter</h3>
-            <input type="email" placeholder="Enter your email">
-            <button>Subscribe</button>
-        </div>
+    
     </div>
 
-    <!-- Main Content -->
-    <div class="container">
-        <form action="/events" method="POST">
+   <!-- Main Content -->
+<div class="container">
+    <form action="/events" method="POST">
         <div class="search-container">
-            <h3>Search for Events</h3>
+            <h3>Search for Events to Grow !!!</h3>
             <input type="text" name="event-search" placeholder="Search for events...">
             <select name="city-select">
                 <option value="">Select City</option>
@@ -295,9 +352,37 @@
             <input type="hidden" name="user_id" value="{{user_id}}">
             <button type="submit">Search</button>
         </div>
-        </form>
-    </div>
+    </form>
+</div>
 
+<div class="container events-container">
+    <h3>The Chakraview Solution <span class="icon">&#x1F4BB;</span></h3>
+    <p>Chakraview is more than a platform—it’s an AI-powered ecosystem designed to provide clarity, credibility, and connectivity for startups.</p>
+    
+    <h4>AI-Powered Strategic Bot: NitiSense <span class="icon">&#x1F916;</span></h4>
+    <ul>
+        <li><strong>Real-time Guidance:</strong> NitiSense identifies bottlenecks and recommends actionable next steps. <span class="icon">&#x1F4C8;</span></li>
+        <li><strong>Partnership & Funding:</strong> Suggests partnerships, exhibitions, and funding opportunities tailored to market trends and business goals. <span class="icon">&#x1F4B5;</span></li>
+        <li><strong>24/7 Clarity:</strong> Acts as a mentor, providing consistent support and strategic insight whenever needed. <span class="icon">&#x1F50D;</span></li>
+    </ul>
+
+    <h4>Founder Credit Score (FCS) <span class="icon">&#x1F4C8;</span>:</h4>
+    <ul>
+        <li><strong>A comprehensive metric:</strong> Evaluates startups on innovation, traction, and engagement. <span class="icon">&#x1F4B0;</span></li>
+        <li><strong>Builds credibility:</strong> Gives investors and partners an easy-to-understand benchmark. <span class="icon">&#x1F4A1;</span></li>
+        <li><strong>Tracks growth:</strong> Enables startups to track their growth and identify areas for improvement. <span class="icon">&#x1F4C8;</span></li>
+    </ul>
+
+    <h4>Global Startup Meetups and Exhibitions <span class="icon">&#x1F4C6;</span>:</h4>
+    <ul>
+        <li><strong>Curated events:</strong> For startups to showcase their innovations to global audiences. <span class="icon">&#x1F4F1;</span></li>
+        <li><strong>Networking opportunities:</strong> Face-to-face networking with investors, manufacturers, and industry leaders. <span class="icon">&#x1F91D;</span></li>
+        <li><strong>Participation in global summits:</strong> Enables startups to gain visibility and mentorship. <span class="icon">&#x1F4C8;</span></li>
+    </ul>
+</div>
+
+
+    
    <!-- Chat Box -->
    <div class="chat-box-container" onclick="toggleChatBox()">
     <span>Chat with NitiSense</span>

@@ -5,29 +5,292 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
     <style>
-        .chat-box { max-width: 600px; margin: auto; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-        .chat-history { max-height: 400px; overflow-y: auto; margin-bottom: 10px; padding: 10px; background: #f9f9f9; }
-        .input-area { display: flex; }
-        input { flex: 1; padding: 10px; }
-        button { padding: 10px; background: #4094fc; color: white; border: none; cursor: pointer; }
-        .loading { text-align: center; padding: 10px; }
-        .message { margin: 10px 0; }
-        .user { font-weight: bold; color: #007bff; }
-        .bot { font-weight: bold; color: #28a745; }
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('/static/chanakya-bg-1.png') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: white;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar h2 {
+            color: black;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar li a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .sidebar li a:hover {
+            color: #ef771b;
+        }
+
+        .sidebar li a .icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .profile-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .profile-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ef771b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .profile-section h4 {
+            color: black;
+            margin: 0;
+        }
+
+        /* Chat Box */
+        .chat-box-container {
+            position: fixed;
+            bottom: 100px;
+            right: 220px;
+            width: 350px;
+            height: 50px;
+            background-color: #ef771b;
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+
+        .chat-box-container .chat-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            color: #ef771b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chat-box-expanded {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 350px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            display: none;
+            flex-direction: column;
+        }
+
+        .chat-box-expanded.active {
+            display: flex;
+        }
+
+        .chat-box-expanded h4 {
+            color: #ef771b;
+            margin-bottom: 10px;
+        }
+
+        .chat-box-expanded .chat-box {
+            flex: 1;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            overflow-y: auto;
+        }
+
+        .chat-box-expanded .input-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-box-expanded .input-container input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .chat-box-expanded .input-container button {
+            padding: 10px 20px;
+            background-color: #ef771b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Container for the main content */
+        .container {
+            margin-left: 30px;
+            margin-top: 200px;
+            padding-top: 170px;
+            width: calc(100% - 250px);
+            padding: 20px;
+        }
+
+             /* Container for the main content */
+             .container1 {
+            margin-left: 300px;
+            margin-top: 50px;
+            padding-top: 20px;
+            width: calc(100% - 450px);
+            padding: 20px;
+        }
+
+        .chat-box {
+            max-width: 600px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .chat-history {
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .input-area {
+            display: flex;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: #4094fc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .message {
+            margin: 10px 0;
+        }
+
+        .user {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .bot {
+            font-weight: bold;
+            color: #28a745;
+        }
     </style>
 </head>
 <body>
-    <div class="chat-box">
-        <div id="chat-history" class="chat-history"></div>
-        <div id="loading" class="loading" style="display:none;">Loading...</div>
-        <div class="input-area">
-            <input type="text" id="user-message" placeholder="Type a message..." />
-            <button id="send-btn">Send</button>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2><a href="{{url_for('dashboard')}}">Chakraview</a></h2>
+
+        <div class="profile-section">
+            <div class="profile-icon">NS</div>
+            <h4><a href={{url_for('NitiSense')}}>NitiSense</a></h4>
+        </div>
+
+        <ul>
+            <li><a href="#"><span class="icon">&#x1F4D6;</span> About</a></li>
+            <li><a href="{{url_for('alliance_load')}}"><span class="icon">&#x1F91D;</span> Alliances</a></li>
+            <li><a href="#"><span class="icon">&#x1F3AE;</span> Demo</a></li>
+            <li><a href="#"><span class="icon">&#x1F4C4;</span> Data Policies</a></li>
+            <li><a href="#"><span class="icon">&#x2709;</span> Contact</a></li>
+        </ul>
+
+        <div class="subscribe-section">
+            <h3>Subscribe to Newsletter</h3>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+<div class="container1">
+    <h3>The Chakraview Solution <span class="icon">&#x1F4BB;</span></h3>
+    <p>Chakraview is more than a platform—it’s an AI-powered ecosystem designed to provide clarity, <br>credibility, and connectivity for startups.</p>
+    
+    <h4>AI-Powered Strategic Bot: NitiSense <span class="icon">&#x1F916;</span></h4>
+    <ul>
+        <li><strong>Real-time Guidance:</strong> NitiSense identifies bottlenecks and recommends actionable next steps. <span class="icon">&#x1F4C8;</span></li>
+        <li><strong>Partnership & Funding:</strong> Suggests partnerships, exhibitions, and funding opportunities tailored <br>to market trends and business goals. <span class="icon">&#x1F4B5;</span></li>
+        <li><strong>24/7 Clarity:</strong> Acts as a mentor, providing consistent support and strategic insight whenever needed. <span class="icon">&#x1F50D;</span></li>
+    </ul>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="chat-box">
+            <div id="chat-history" class="chat-history"></div>
+            <div id="loading" class="loading" style="display:none;">Loading...</div>
+            <div class="input-area">
+                <input type="text" id="user-message" placeholder="Type a message..." />
+                <button id="send-btn">Send</button>
+            </div>
         </div>
     </div>
 
     <script>
-
         const userId = "{{ user_id }}";  // Assuming user_id is passed from Flask context
         const sendButton = document.getElementById("send-btn");
         const userMessageInput = document.getElementById("user-message");

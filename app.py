@@ -427,15 +427,16 @@ def chat():
     print("Bio:", bio)
     occupation = user_details.get('occupation', 'Unknown occupation')
     print("Occupation:", occupation)
-
+    username1 = user_details.get('name', 'Unknown user')
+    print("Username:", username1)
     # Check if chat history exists
     
     print("Chat History from usrerrrrr :", chat_history)
-
+    print(username1)
     if not chat_history:  # If no chat history, generate a welcome message
-        prompt = f"You are a professional chatbot named NitiSense. Give a warm welcome message you are here to asssist. | ASSIST THE user with this bio: {bio} and this occupation: {occupation}. Make sure you do not give anything else.,adress him with his name {username}"
+        prompt = f"You have to chat with {username1} , address him with his name and tell - what a wonderful day to have conversation - next go on to have more info about him - this si some breif of me {bio} , and this is my occupation : {occupation}, now chat with me giv eme a warm wecom and see what could i love to talk about , very freindly while also proffessional , reassure. ur here to help ,do not inclidu any formatting , no * or anything only plain text "
     else:  # If chat history exists, continue the chat
-        prompt = f"You are a professional chatbot named NitiSense. Continue the conversation and this . Here's the previous chat history: {chat_history}. Continue based on that."
+        prompt = f"chat history: {chat_history}. Continue based on that.keep essense alive"
 
     # Generate the response using Google Generative AI
     model = genai.GenerativeModel("gemini-1.5-flash")
