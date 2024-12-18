@@ -252,13 +252,13 @@
         <div class="profile-section">
             <div class="profile-icon">NS</div>
             <h4>NitiSense</h4>
-            <p>John Doe</p>
-            <p>FCS: 85</p>
+            <p>{{name}}</p>
+            <p>FCS: {{fcs}}</p>
         </div>
 
         <ul>
             <li><a href="#"><span class="icon">&#x1F4D6;</span> About</a></li>
-            <li><a href="#"><span class="icon">&#x1F465;</span> Team Members</a></li>
+            <li><a href= "{{url_for('alliance_load')}}" ><span class="icon">&#x1F91D;</span> Alliances</a></li>
             <li><a href="#"><span class="icon">&#x1F3AE;</span> Demo</a></li>
             <li><a href="#"><span class="icon">&#x1F4C4;</span> Data Policies</a></li>
             <li><a href="#"><span class="icon">&#x2709;</span> Contact</a></li>
@@ -290,6 +290,8 @@
                 <option value="Chandigarh">Chandigarh</option>
                 <option value="Jaipur">Jaipur</option>
             </select>
+            <input type="hidden" name="name" value="{{name}}">
+            <input type="hidden" name="user_id" value="{{user_id}}">
             <button type="submit">Search</button>
         </div>
         </form>
