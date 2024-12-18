@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        .chat-box { max-width: 600px; margin: auto; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .chat-history { max-height: 400px; overflow-y: auto; margin-bottom: 10px; padding: 10px; background: #f9f9f9; }
+        .input-area { display: flex; }
+        input { flex: 1; padding: 10px; }
+        button { padding: 10px; background: #4094fc; color: white; border: none; cursor: pointer; }
+        .loading { text-align: center; padding: 10px; }
+        .message { margin: 10px 0; }
+        .user { font-weight: bold; color: #007bff; }
+        .bot { font-weight: bold; color: #28a745; }
+    </style>
+</head>
+<body>
+    <div class="chat-box">
+        <div id="chat-history" class="chat-history"></div>
+        <div id="loading" class="loading" style="display:none;">Loading...</div>
+        <div class="input-area">
+            <input type="text" id="user-message" placeholder="Type a message..." />
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script>
+
+        const userId = "{{ user_id }}";  // Assuming user_id is passed from Flask context
+        const sendButton = document.getElementById("send-btn");
+        const userMessageInput = document.getElementById("user-message");
+        const chatHistoryContainer = document.getElementById("chat-history");
+        const loadingContainer = document.getElementById("loading");
+
+        sendButton.addEventListener("click", sendMessage);
+
+        // Function to handle sending the message
+        async function sendMessage() {
+            const message = userMessageInput.value;
+            if (!message.trim()) return;
+
+            // Display loading indicator
+            loadingContainer.style.display = "block";
+            
+            // Send the message to the backend
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    user_id: userId,
+                    message: message
+                })
+            });
+
+            const data = await response.json();
+
+            // Update chat history
+            updateChatHistory(message, data.response);
+
+            // Clear the input and hide loading
+            userMessageInput.value = "";
+            loadingContainer.style.display = "none";
+        }
+
+        // Function to update chat history
+        function updateChatHistory(userMessage, botResponse) {
+            const userMessageElement = document.createElement("div");
+            userMessageElement.classList.add("message", "user");
+            userMessageElement.textContent = `You: ${userMessage}`;
+            chatHistoryContainer.appendChild(userMessageElement);
+
+            const botMessageElement = document.createElement("div");
+            botMessageElement.classList.add("message", "bot");
+            botMessageElement.textContent = `Bot: ${botResponse}`;
+            chatHistoryContainer.appendChild(botMessageElement);
+
+            // Scroll to the bottom of the chat history
+            chatHistoryContainer.scrollTop = chatHistoryContainer.scrollHeight;
+        }
+    </script>
+</body>
+</html>

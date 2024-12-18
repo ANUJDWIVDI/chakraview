@@ -8,6 +8,15 @@ from flask import Flask, render_template, jsonify
 import requests
 import pprint 
 from neo_4j_user_handler import Neo4jHandler
+from flask import Flask, render_template, request, jsonify
+import google.generativeai as genai # Assuming you have a Neo4jHandler class
+import uuid
+from neo_handler import Neo4jHandler1
+from apscheduler.schedulers.background import BackgroundScheduler
+import time
+
+genai.configure(api_key="AIzaSyCv9KO5acAkV2_T1p9PKVNJSrmeswE8_AA")
+
 # ---- App Initialization ----
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # Replace with a strong secret key
@@ -25,6 +34,23 @@ username = "neo4j"
 password = "AZE3H4xpn9vP-Uwwz_H5fhiGSFZivlSvKGImf1ZoNjM"
 
 driver = GraphDatabase.driver(URI, auth=AUTH)
+
+
+# Global chat history
+chat_history = []
+
+# ---- Scheduler to clear chat history every 30 minutes ----
+def clear_chat_history():
+    global chat_history
+    chat_history = []  # Clear the chat history list
+    print("Chat history cleared.")
+
+# Setup the scheduler to run every 30 minutes
+scheduler = BackgroundScheduler()
+scheduler.add_job(func=clear_chat_history, trigger="interval", minutes=30)
+scheduler.start()
+
+
 
 # ---- Flask-Login Setup ----
 login_manager = LoginManager()
@@ -55,7 +81,7 @@ def get_user_by_id(tx, user_id):
 
 @app.route("/")
 def home():
-    return redirect(url_for("login"))
+    return render_template("intro.html")
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -374,6 +400,85 @@ def logout():
     logout_user()
     flash("Logged out successfully!", "success")
     return redirect(url_for("login"))
+
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    global chat_history
+    # Fetching user_id and message from JSON request
+    data = request.get_json()
+    user_id = data.get('user_id')
+    print("User ID:", user_id)
+    message = data.get('message')
+    print("Message:", message)
+
+    # Neo4j credentials
+    uri = "neo4j+s://608b8766.databases.neo4j.io"
+    username = "neo4j"
+    password = "AZE3H4xpn9vP-Uwwz_H5fhiGSFZivlSvKGImf1ZoNjM"
+
+    # Fetch user details from Neo4j
+    neo4j_handler = Neo4jHandler1(uri, username, password)
+    user_details = neo4j_handler.get_user_details(user_id)
+    print("User Details:", user_details)
+
+    # Safely access the bio and occupation fields, provide default values if they don't exist
+    bio = user_details.get('bio', 'No bio available')
+    print("Bio:", bio)
+    occupation = user_details.get('occupation', 'Unknown occupation')
+    print("Occupation:", occupation)
+
+    # Check if chat history exists
+    
+    print("Chat History from usrerrrrr :", chat_history)
+
+    if not chat_history:  # If no chat history, generate a welcome message
+        prompt = f"You are a professional chatbot named NitiSense. Give a warm welcome message you are here to asssist. | ASSIST THE user with this bio: {bio} and this occupation: {occupation}. Make sure you do not give anything else.,adress him with his name {username}"
+    else:  # If chat history exists, continue the chat
+        prompt = f"You are a professional chatbot named NitiSense. Continue the conversation and this . Here's the previous chat history: {chat_history}. Continue based on that."
+
+    # Generate the response using Google Generative AI
+    model = genai.GenerativeModel("gemini-1.5-flash")
+    response = model.generate_content(prompt)
+
+    # Save the chat history, including the current message and response
+    chat_history.append(response.text)
+
+    return jsonify({
+        "chat_history": chat_history,
+        "response": response.text
+    })
+
+# Helper function to save chat history
+def save_chat_history(user_id, message, response_text):
+    # Generate unique ID for the chat
+    chat_id = str(uuid.uuid4())
+
+    # Save the chat history
+    chat_history = {
+        "chat_id": chat_id,
+        "user_id": user_id,
+        "messages": [
+            {"message": message, "role": "user"},
+            {"message": response_text, "role": "bot"}
+        ]
+    }
+
+    # In this example, we're just printing it; you can save it to your database
+    print("Chat History Saved:", chat_history)
+
+    return chat_history
+
+# Helper function to get chat history (you can fetch from the database)
+def get_chat_history(user_id):
+    # For simplicity, returning an empty list here, but you would fetch it from the database
+    return []  # or fetch from your database
+
+@app.route('/NitiSense', methods=['GET'])
+def NitiSense():
+    print("NitiSense calling")
+    print(current_user.id)
+    return render_template('NitiSense.html',user_id=current_user.id)
 
 if __name__ == "__main__":
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)

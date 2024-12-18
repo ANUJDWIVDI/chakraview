@@ -5,221 +5,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup - Chakraview</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7fa;
-            color: #333;
+        /* Basic Reset */
+        * {
             margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #365dd6;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-        }
-        h2 {
-            color: #365dd6;
-        }
-        .container {
-            width: 60%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input[type="text"], input[type="email"], input[type="password"], textarea, select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
             box-sizing: border-box;
         }
-        textarea {
-            height: 120px;
-        }
-        button {
-            background-color: #365dd6;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #4e7bd9;
-        }
-        .link {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .interests-container {
+
+        /* Set background image */
+        body {
+            background-image: url('/static/chanakya-bg-1.png'); /* Update with the correct path to the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            justify-content: center;
+            align-items: flex-start;  /* Align form at the top */
+            min-height: 100vh;
+            color: #333;
+            padding: 0 5%;  /* 10% total margin (5% on each side) */
+            overflow-x: hidden;  /* Allow vertical scroll, hide horizontal */
+            flex-direction: column;
         }
-        .interest {
-            background-color: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
+
+        /* Container for the signup form */
+        .signup-container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 12px;
+            width: 90%;  /* Increased width */
+            max-width: 1000px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            margin-top: 20px;  /* Space from the top */
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 32px;  /* Adjusted font size */
+            font-weight: 600;
+            color: #fff;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-size: 18px;  /* Adjusted font size */
+            line-height: 1.6;
+            color: #bbb;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;  /* Increased margin */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #f8f8f8;  /* Light background for inputs */
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ef771b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+
+        button:hover {
+            background-color: #365dd6;
+        }
+
+        .link {
+            margin-top: 20px;
+        }
+
+        .link a {
+            color: #ef771b;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+
+        .interests-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .interest {
+            background-color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-size: 16px;
+            color: #333;
+        }
+
         .interest:hover {
             background-color: #365dd6;
             color: #fff;
         }
+
         .interests-form {
             display: flex;
             flex-direction: column;
             margin-top: 20px;
         }
-        .interests-form label {
-            font-weight: bold;
+
+        .interests-form button {
+            width: auto;
+            margin-bottom: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .signup-container {
+                width: 90%;  /* Adjusted width for mobile */
+                padding: 30px;
+            }
+
+            button {
+                font-size: 16px;  /* Adjusted font size for mobile */
+            }
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Chakraview: Empowering Your Growth with AI and Clarity</h1>
-</header>
-
-<div class="container">
-    <h2>Sign Up</h2>
-    <p>Join us and take the next step in harnessing AI to empower your journey. Fill in your details and let’s connect!</p>
-    
-    <form id="signup-form" method="POST">
-        <!-- Name Field -->
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" name="name" required>
+    <div class="signup-container">
+        <!-- Display Quote at the top -->
+        <div class="quote" style="font-weight: bold; font-size: 24px; color: white; text-align: center;">
+            ‘काम’ को व्यापारिक आवश्यकताएँ और ‘मैं’ को आपके संगठन के रूप में लें, और आपको उत्तर मिल जाएगा।
         </div>
+        
+        <p>
+            <p></p>
+        </p>
+        <h2>Sign Up</h2>
+        <p>Join us and take the next step in harnessing AI to empower your journey. Fill in your details and let’s connect!</p>
 
-        <!-- Email Field -->
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" name="email" required>
-        </div>
-
-        <!-- Password Field -->
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" name="password" required>
-        </div>
-
-        <!-- User Bio Field -->
-        <div class="form-group">
-            <label for="bio">Tell us about yourself (optional):</label>
-            <textarea name="bio"></textarea>
-        </div>
-
-        <!-- Current Occupation Field -->
-        <div class="form-group">
-            <label for="occupation">Current Occupation:</label>
-            <select name="occupation" required>
-                <option value="" disabled selected>Select your role</option>
-                <option value="Founder/CEO">Founder/CEO</option>
-                <option value="Software Engineer">Software Engineer</option>
-                <option value="Data Scientist">Data Scientist</option>
-                <option value="Product Manager">Product Manager</option>
-                <option value="Business Analyst">Business Analyst</option>
-                <option value="AI Specialist">AI Specialist</option>
-                <option value="UX/UI Designer">UX/UI Designer</option>
-                <option value="Marketing Specialist">Marketing Specialist</option>
-                <option value="Sales Manager">Sales Manager</option>
-                <option value="Consultant">Consultant</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
-
-        <!-- User Interests Section -->
-        <div class="form-group">
-            <label for="interests">Select your interests (optional):</label>
-            <div class="interests-container">
-                <div class="interest" onclick="toggleInterest(this)">AI</div>
-                <div class="interest" onclick="toggleInterest(this)">Innovation</div>
-                <div class="interest" onclick="toggleInterest(this)">Blockchain</div>
-                <div class="interest" onclick="toggleInterest(this)">Business Strategy</div>
-                <div class="interest" onclick="toggleInterest(this)">Growth Hacking</div>
-                <div class="interest" onclick="toggleInterest(this)">Data Science</div>
+        <form id="signup-form" method="POST">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
             </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <!-- User Bio Field -->
+            <div class="form-group">
+                <label for="bio">Tell us about yourself (optional):</label>
+                <textarea name="bio"></textarea>
+            </div>
+
+            <!-- Current Occupation Field -->
+            <div class="form-group">
+                <label for="occupation">Current Occupation:</label>
+                <select name="occupation" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="Founder/CEO">Founder/CEO</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="Business Analyst">Business Analyst</option>
+                    <option value="AI Specialist">AI Specialist</option>
+                    <option value="UX/UI Designer">UX/UI Designer</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                    <option value="Sales Manager">Sales Manager</option>
+                    <option value="Consultant">Consultant</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- User Interests Section -->
+            <div class="form-group">
+                <label for="interests">Select your interests (optional):</label>
+                <div class="interests-container">
+                    <div class="interest" onclick="toggleInterest(this)">AI</div>
+                    <div class="interest" onclick="toggleInterest(this)">Innovation</div>
+                    <div class="interest" onclick="toggleInterest(this)">Blockchain</div>
+                    <div class="interest" onclick="toggleInterest(this)">Business Strategy</div>
+                    <div class="interest" onclick="toggleInterest(this)">Growth Hacking</div>
+                    <div class="interest" onclick="toggleInterest(this)">Data Science</div>
+                    <!-- Additional Interests -->
+                    <div class="interest" onclick="toggleInterest(this)">Cybersecurity</div>
+                    <div class="interest" onclick="toggleInterest(this)">Machine Learning</div>
+                    <div class="interest" onclick="toggleInterest(this)">Digital Marketing</div>
+                    <div class="interest" onclick="toggleInterest(this)">Cloud Computing</div>
+                    <div class="interest" onclick="toggleInterest(this)">Product Design</div>
+                </div>
+            </div>
+
+            <!-- Button to add custom interests -->
+            <div class="interests-form">
+                <button type="button" onclick="addInterest()">Add your own interest</button>
+                <input type="text" id="custom-interest" placeholder="Enter your interest" style="display:none;" onblur="addCustomInterest()">
+            </div>
+
+            <!-- Hidden field for interests -->
+            <input type="hidden" name="interests" id="selected-interests">
+
+            <!-- Submit Button -->
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="link">
+            <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
         </div>
-
-        <!-- Button to add custom interests -->
-        <div class="interests-form">
-            <button type="button" onclick="addInterest()">Add your own interest</button>
-            <input type="text" id="custom-interest" placeholder="Enter your interest" style="display:none;" onblur="addCustomInterest()">
-        </div>
-
-        <!-- Hidden field for interests -->
-        <input type="hidden" name="interests" id="selected-interests">
-
-        <!-- Submit Button -->
-        <button type="submit">Sign Up</button>
-    </form>
-
-    <div class="link">
-        <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
     </div>
-</div>
 
-<script>
-    // Function to show input field for custom interest
-    function addInterest() {
-        const customInterestInput = document.getElementById('custom-interest');
-        if (customInterestInput.style.display === "none") {
-            customInterestInput.style.display = "block";
-        } else {
-            customInterestInput.style.display = "none";
+    <script>
+        // Function to show input field for custom interest
+        function addInterest() {
+            const customInterestInput = document.getElementById('custom-interest');
+            if (customInterestInput.style.display === "none") {
+                customInterestInput.style.display = "block";
+            } else {
+                customInterestInput.style.display = "none";
+            }
         }
-    }
 
-    // Toggle selection of predefined interests
-    function toggleInterest(interestElement) {
-        interestElement.classList.toggle('selected');
-        updateInterests();
-    }
-
-    // Add custom interest to the interest container and mark as selected
-    function addCustomInterest() {
-        const customInterestInput = document.getElementById('custom-interest');
-        if (customInterestInput.value.trim()) {
-            const newInterest = document.createElement('div');
-            newInterest.classList.add('interest', 'selected');
-            newInterest.textContent = customInterestInput.value;
-            document.querySelector('.interests-container').appendChild(newInterest);
-            customInterestInput.value = ''; // Reset input field
-            customInterestInput.style.display = "none"; // Hide input field
+        // Toggle selection of predefined interests
+        function toggleInterest(interestElement) {
+            interestElement.classList.toggle('selected');
             updateInterests();
         }
-    }
 
-    // Update hidden input with selected interests
-    function updateInterests() {
-        const selectedInterests = [];
-        const selectedInterestElements = document.querySelectorAll('.interest.selected');
-        selectedInterestElements.forEach(function(interest) {
-            selectedInterests.push(interest.textContent);
+        // Add custom interest to the interest container and mark as selected
+        function addCustomInterest() {
+            const customInterestInput = document.getElementById('custom-interest');
+            if (customInterestInput.value.trim()) {
+                const newInterest = document.createElement('div');
+                newInterest.classList.add('interest', 'selected');
+                newInterest.textContent = customInterestInput.value;
+                document.querySelector('.interests-container').appendChild(newInterest);
+                customInterestInput.value = ''; // Reset input field
+                customInterestInput.style.display = "none"; // Hide input field
+                updateInterests();
+            }
+        }
+
+        // Update hidden input with selected interests
+        function updateInterests() {
+            const selectedInterests = [];
+            const selectedInterestElements = document.querySelectorAll('.interest.selected');
+            selectedInterestElements.forEach(function(interest) {
+                selectedInterests.push(interest.textContent);
+            });
+            document.getElementById('selected-interests').value = selectedInterests.join(', ');
+        }
+
+        // Attach form submit handler to log selected interests
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            updateInterests(); // Ensure interests are updated before submission
         });
-        document.getElementById('selected-interests').value = selectedInterests.join(', ');
-    }
-
-    // Attach form submit handler to log selected interests
-    document.getElementById('signup-form').addEventListener('submit', function(event) {
-        updateInterests(); // Ensure interests are updated before submission
-    });
-</script>
-
+    </script>
 </body>
 </html>
