@@ -15,7 +15,7 @@ from neo_handler import Neo4jHandler1
 from apscheduler.schedulers.background import BackgroundScheduler
 import time
 
-genai.configure(api_key="AIzaSyCv9KO5acAkV2_T1p9PKVNJSrmeswE8_AA")
+genai.configure(api_key="AIzaSyDK-Fwq6bvT7iIN8RvDjRkn7idsfRpzu3w")
 
 # ---- App Initialization ----
 app = Flask(__name__)
@@ -24,8 +24,9 @@ UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # ---- Neo4j Credentials ----
-URI = "neo4j+s://608b8766.databases.neo4j.io"
-AUTH = ("neo4j", "AZE3H4xpn9vP-Uwwz_H5fhiGSFZivlSvKGImf1ZoNjM")
+# ---- Neo4j Credentials ----
+URI = "neo4j+s://dafc1305.databases.neo4j.io"  # Changed URI
+AUTH = ("neo4j", "ad0F75a5h11Li7FrNHeOQY94yzBFLz06aHK0z4aOc4M")  # New password
 
 
 # Neo4j credentials
@@ -33,7 +34,9 @@ uri = "neo4j+s://608b8766.databases.neo4j.io"
 username = "neo4j"
 password = "AZE3H4xpn9vP-Uwwz_H5fhiGSFZivlSvKGImf1ZoNjM"
 
+# Initialize driver with new credentials
 driver = GraphDatabase.driver(URI, auth=AUTH)
+
 
 
 # Global chat history
@@ -480,6 +483,15 @@ def NitiSense():
     print("NitiSense calling")
     print(current_user.id)
     return render_template('NitiSense.html',user_id=current_user.id)
+
+# Add to your existing Flask routes
+@app.route('/dsu-chatbot')
+@login_required
+def dsu_chatbot():
+    """Redirect to Streamlit chatbot with credentials"""
+    import subprocess
+    subprocess.Popen(["streamlit", "run", "dsu_chatbot.py", "--server.port=8501"])
+    return redirect("http://localhost:8501")
 
 if __name__ == "__main__":
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
